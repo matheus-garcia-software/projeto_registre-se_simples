@@ -1,0 +1,145 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter, Arial, sans-serif;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background: #0c0013;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 420px; /* Largura fixa para ficar mais "gordinho" nas laterais */
+    background: linear-gradient(100deg, #180c25, #351558);
+    color: #fff;
+    box-shadow: 0px 0px 80px rgba(98, 13, 167, 0.55);
+    border-radius: 15px;
+    padding: 40px; /* Mais preenchimento interno */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Mais espaço entre os blocos de input */
+    position: relative;
+}
+
+.container h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.close a {
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute; 
+    top: 15px;         /* Distância do topo */
+    right: 20px;       /* Distância da direita */
+    opacity: 0.7;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.close:hover a {
+    opacity: 1; /* Efeito legal: ele brilha mais quando passa o mouse */
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    background-color: #0c0013;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 0px 20px 20px;
+    border-radius: 10px;
+}
+
+.input-box label {
+    display: block;        /* Faz a label ocupar a linha toda */
+    margin-bottom: -10px;    /* ESSE VALOR move o Email para cima/baixo em relação ao input */
+    font-size: 14px;
+    text-align: left;      /* Garante que fique na esquerda */
+}
+
+span {
+    color: rgb(255, 59, 59);
+}
+
+.radio-group {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.radio-group input {
+    cursor: pointer;
+}
+
+.terms {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 20px;
+}
+
+.terms p {
+    font-size: 14px;
+    margin: 10px 0px 0px 10px;
+}
+
+.terms a {
+    color: #9200cc;
+}
+
+.Cadastre-se {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: filter 0.2s;
+}
+
+.Cadastre-se:hover {
+    filter: brightness(1.2);
+}
+
+.login {
+    text-align: center;
+}
+
+.login a {
+    color: #9200cc;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
